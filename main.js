@@ -9,14 +9,14 @@ $(document).ready(function(){
       	nextArrow:"<i class='right_arrow fa fa-angle-right' aria-hidden='true'></i>",
 		responsive: [
 		{
-		  breakpoint: 600,
+		  breakpoint: 768,
 		  settings: {
 		    slidesToShow: 2,
 		    slidesToScroll: 1
 		  }
 		},
 		{
-		  breakpoint: 480,
+		  breakpoint: 500,
 		  settings: {
 		    slidesToShow: 1,
 		    slidesToScroll: 1

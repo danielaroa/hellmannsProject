@@ -8,9 +8,6 @@
 	.main__header {
     	height: 70px;
 	}
-	.main__content {
-    	top: 70px;
-    }
     .main__header--spotify {
 	    top: 25px;
 	    font-size: 1.4vw;
@@ -20,17 +17,21 @@
 	
 }
 @media screen and (max-width: 990px){
-	
+	.estilo__content .content__two div img {
+	    left: 35%;
+	}
+	.estilo__content .content__two p {
+		padding-top: 0;
+	}
 }
 @media screen and (max-width: 768px){
 	.main__content h1 {
 		width: 30%;
 	    left: 31%;
-	    top: 17%;
+	    top: 25%;
 	}
 	.main__content {
-	    top: 60px;
-	    height: 300px;
+	    height: 360px;
 	    width: 100%;
 	}
 	.main__content p {
@@ -60,13 +61,91 @@
 	.main__login a i {
 	    font-size: 3vw;
 	}
+	.main__login a, .content__two a, .playlist__content a {
+	    font-size: 1.3vw;
+	    padding: 10px;
+	}
+	.resultado__content {
+	    padding-top: 12vw;
+	}
+	.resultado__content p, .intensidades__content p {
+		font-size: 3vw;
+	}
+	.estilo__content > p:nth-child(1) {
+	    font-size: 3vw;
+	    width: 40%;
+	    margin-bottom: 15px;
+	}
+	.intensidades__background {
+		width: 60%!important;
+	}
+	.intensidades__content div img {
+	    width: 13vw;
+	}
+	.intensidades__content div#first label, .intensidades__content div#second label {
+	    font-size: 1.7vw;
+	}
+	.left_arrow, .right_arrow {
+	    top: 15%;
+	}
+	.resultado__slider div label {
+	    font-size: 2vw;
+	}
+	.playlist__content p:nth-child(1) {
+	    font-size: 3vw;
+	    width: 60%;
+	}
+	.playlist__content p:nth-child(2) {
+	    font-size: 2vw;
+	    width: 60%;
+	    margin-bottom: 2.5vw;
+	    margin-top: 6px;
+	}
+	.playlist__content a {
+	    font-size: 1.7vw;
+	}
+	.playlist__content p.spotify i {
+	    font-size: 2.5vw;
+	    top: 2px;
+	}
+	.resultado__slider {
+    	width: 70%;
+    }
+    .estilo__content .content__two p {
+	    font-size: 2vw;
+	    width: 42%
+	}
+}
+@media screen and (max-width: 600px) {
+	.resultado__content {
+	    padding-top: 15vw;
+	}
+	.resultado__content p.resultado__escuchados {
+	    width: 40%;
+	}
+}
+@media screen and (max-width: 500px){
+	.slick-current.slick-active	label {
+		visibility: visible!important;
+	}
+	.resultado__slider {
+	    width: 76%;
+	}
+	.resultado__slider div label {
+		font-size: 3.5vw;
+	}
 }
 @media screen and (max-width: 496px){
+	.resultado__content p, .intensidades__content p {
+	    font-size: 4vw;
+	}
+	.resultado__generos {
+	    width: 17vw;
+	    height: 6vw;
+	    font-size: 3vw;
+	}
 	.main__header {
 	    height: 50px;
-	}
-	.main__content {
-	    top: 50px;
 	}
 	.main__content p {
 	    font-size: 3vw;
@@ -77,7 +156,7 @@
 	    margin-bottom: 0;
 	}
 	.main__header h2 {
-	    font-size: 2.7vw;
+	    font-size: 3vw;
 	}
 	.main__login a {
 	    font-size: 1.8vw;
@@ -85,9 +164,65 @@
 	.main__footer ul {
 	    margin: 0 0 0 2%;
 	}
-}
-@media screen and (max-width: 480px){
-	.slick-current.slick-active	label {
-		visibility: visible!important;
+	.resultado__content p, .intensidades__content p {
+	    font-size: 4.5vw;
+	    line-height: 4vw;
+	}
+	.intensidades__content p {
+		width: 60%;
+	}
+	.intensidades__background {
+	    width: 70%!important;
+	}
+	.intensidades__content div img {
+	    width: 16vw;
+	}
+	.intensidades__content div#first label, .intensidades__content div#second label {
+	    font-size: 2.5vw;
+	}
+	.estilo__content > p:nth-child(1) {
+	    font-size: 4.5vw;
+	    width: 55%;
+	    line-height: 4.5vw;
+	}
+	.estilo__content .content__two div {
+	    width: 43%;
+	}
+	.estilo__content .content__two div img {
+	    left: 20%;
+	}
+	.content__two a {
+	    font-size: 1.7vw;
+	    top: 20px;
+	}
+	.playlist__content a {
+	    font-size: 2vw;
+	}
+	.estilo__content p strong {
+	    font-size: 3vw;
+	}
+	.estilo__content .content__two p {
+	    font-size: 3vw;
+	    width: 42%;
+	}
+	.playlist__content p:nth-child(1) {
+	    font-size: 4.5vw;
+	    width: 85%;
+	    line-height: 4.5vw;
+	}
+	.playlist__content p:nth-child(2) {
+	    font-size: 3vw;
+	    width: 85%;
+	    margin-bottom: 4.5vw;
+	    margin-top: 10px;
+	}
+	.playlist__content p.spotify i {
+	    font-size: 3vw;
+	}
+	.left_arrow, .right_arrow {
+	    top: 40%;
+	}
+	.main__header--logo {
+	    padding-left: 1%;
 	}
 }

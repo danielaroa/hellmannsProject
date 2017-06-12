@@ -13,6 +13,7 @@ html {
 	width: 100%;
 	background-color: #f9e03a;
 	z-index: 9;
+    position: fixed;
 }
 .main__header--logo img {
     height: auto;
@@ -53,7 +54,7 @@ html {
     width: 100%;
     z-index: 9;
     background: #ffffff;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 .main__footer ul li {
@@ -78,14 +79,14 @@ html {
     position: absolute;
     width: 36%;
     height: 768px;
-    top: 90px;
+    top: 0px;
     background: -o-linear-gradient(right, rgb(255, 255, 255), rgba(250, 242, 98, 0.64));
     background: -moz-linear-gradient(right, rgb(255, 255, 255), rgba(250, 242, 98, 0.64));
     background: linear-gradient(to right, rgb(255, 255, 255) , rgba(250, 242, 98, 0.64));
     box-shadow: 20px 0px 30px 13px rgba(250, 242, 98, 0.69);
 }
 .main__content h1 {
-	top: 20%;
+	top: 25%;
     position: relative;
     font-size: 3.5vw;
     text-align: center;
@@ -97,14 +98,14 @@ html {
 }
 .main__content p {
 	font-size: 2vw;
-    top: 35%;
+    top: 40%;
     position: relative;
     text-align: center;
     line-height: 3vw;
 }
 .main__login {
 	position: relative;
-    top: 40%;
+    top: 45%;
     text-align: center;
 }
 .main__login a, .content__two a, .playlist__content a {
@@ -154,6 +155,7 @@ html {
 	font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 1.5vw;
+    padding-top: 15px;
     visibility: hidden;
 }
 .resultado__slider div img {
@@ -174,7 +176,7 @@ html {
 }
 .resultado__content {
 	background-color: #112670;
-    padding-top: 3%;
+    padding-top: 10vw;
 }
 .resultado__content p.resultado__escuchados {
 	margin: 0 auto;
@@ -185,6 +187,7 @@ html {
     font-size: 2.5vw;
     color: #fff;
     margin: 0;
+    line-height: 3.5vw;
 }
 .resultado__content p:nth-child(2) {
 	font-weight: 800;
@@ -241,6 +244,7 @@ html {
 	color: #0f327c;
 	font-size: 2.5vw;
 	font-weight: 800;
+    line-height: 3.5vw;
 }
 .intensidades__content .div__modify {
 	border-color: transparent transparent #f6d603 transparent;
@@ -248,7 +252,6 @@ html {
 .playlist__content {
 	background-color: #0f327c;
 	text-align: center;
-	margin-bottom: 40px;
 	padding-bottom: 5%;
 }
 .playlist__content p {
@@ -257,14 +260,16 @@ html {
 	text-align: center;
 }
 .playlist__content p:nth-child(1) {
-	font-size: 2vw;
-	line-height: 35px;
+	font-size: 2.5vw;
+	line-height: 3.5vw;
 	font-weight: 800;
-	width: 40%;
+	width: 50%;
+    padding-top: 2.5vw;
 }
 .playlist__content p:nth-child(2) {
-	font-size: 1.2vw;
-	width: 34%;
+    font-size: 1.5vw;
+    width: 40%;
+    margin-bottom: 2vw;
 }
 .playlist__content p.spotify {
 	margin-top: 25px;
@@ -292,7 +297,10 @@ html {
 }
 .estilo__content p strong {
 	font-size: 2.3vw;
-	line-height: 70px;
+	line-height: 5vw;
+}
+.estilo__content p, .playlist__content p{
+   line-height: 3.5vw;
 }
 .estilo__content div {
 	display: inline-flex;
@@ -305,15 +313,15 @@ html {
     margin-top: 15px;
 }
 .estilo__content .content__two p {
-	width: 25%;
-    line-height: 25px;
+	width: 30%;
+    line-height: 3vw;
     text-align: center;
     padding-top: 50px;
     font-size: 1.6vw;
 }
 .estilo__content .content__two div img{
 	width: auto;
-    height: 50%;
+    height: 30vw;
     left: 50%;
     position: relative;
 }
@@ -335,6 +343,7 @@ button.slick-prev {
 	color: #fff;
 	position: absolute;
 	top: 30%;
+    cursor: pointer;
 }
 .right_arrow {
 	font-size: 5vw;
@@ -342,4 +351,5 @@ button.slick-prev {
 	position: absolute;
 	top: 30%;
 	right: -5%;
+    cursor: pointer;
 }
