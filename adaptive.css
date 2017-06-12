@@ -2,7 +2,19 @@
 
 }
 @media screen and (max-width: 1200px){
-	
+	.main__header h2 {
+    	padding: 25px 0;
+	}
+	.main__header {
+    	height: 70px;
+	}
+	.main__content {
+    	top: 70px;
+    }
+    .main__header--spotify {
+	    top: 25px;
+	    font-size: 1.4vw;
+	}
 }
 @media screen and (max-width: 1024px){
 	
@@ -11,7 +23,68 @@
 	
 }
 @media screen and (max-width: 768px){
-	
+	.main__content h1 {
+		width: 30%;
+	    left: 31%;
+	    top: 17%;
+	}
+	.main__content {
+	    top: 60px;
+	    height: 300px;
+	    width: 100%;
+	}
+	.main__content p {
+		width: 50%;
+    	margin: 0 auto 10px auto;
+    	font-size: 2.5vw;
+	}
+	.main__header {
+	    height: 60px;
+	}
+	.main__header--logo {
+    	padding-left: 4%;
+    }
+    .main__header h2 {
+    	font-size: 2.5vw;
+    }
+    .main__header--spotify {
+	    font-size: 1.7vw;
+	}
+	.main__login a {
+	    font-size: 1.3vw;
+	    padding: 10px;
+	}
+	.main__footer {
+	    font-size: 1.8vw;
+	}
+	.main__login a i {
+	    font-size: 3vw;
+	}
+}
+@media screen and (max-width: 496px){
+	.main__header {
+	    height: 50px;
+	}
+	.main__content {
+	    top: 50px;
+	}
+	.main__content p {
+	    font-size: 3vw;
+	    line-height: 3.5vw;
+	}
+	.main__content h1 {
+	    font-size: 4vw;
+	    margin-bottom: 0;
+	}
+	.main__header h2 {
+	    font-size: 2.7vw;
+	}
+	.main__login a {
+	    font-size: 1.8vw;
+	}
+	.main__footer ul {
+	    margin: 0 0 0 2%;
+	}
 }
 @media screen and (max-width: 480px){
 	.slick-current.slick-active	label {

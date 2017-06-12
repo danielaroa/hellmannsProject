@@ -16,7 +16,7 @@ html {
 }
 .main__header--logo img {
     height: auto;
-    width: 215px;
+    width: 17vw;
 }
 .main__header--logo {
 	padding-left: 10%;
@@ -100,6 +100,7 @@ html {
     top: 35%;
     position: relative;
     text-align: center;
+    line-height: 3vw;
 }
 .main__login {
 	position: relative;
@@ -191,8 +192,8 @@ html {
 	font-size: 3vw;
 }
 .resultado__generos {
-    width: 160px;
-    height: 56px;
+    width: 14vw;
+    height: 5vw;
     text-align: center;
     background: #33ccff;
     -webkit-transform: skew(-20deg);
@@ -203,7 +204,7 @@ html {
     margin: 15px auto;
     color: #fff;
     font-size: 2vw;
-    padding: 6px;
+    padding: 1vw;
 }
 .intensidades__content div {
 	width: 100%;
