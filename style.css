@@ -16,7 +16,7 @@ html {
 }
 .main__header--logo img {
     height: auto;
-    width: 90%;
+    width: 215px;
 }
 .main__header--logo {
 	padding-left: 10%;
@@ -29,6 +29,7 @@ html {
     margin: 0;
     padding: 30px 0;
     font-weight: 400;
+    font-size: 2vw;
 }
 .main__header--spotify {
     position: absolute;
@@ -113,7 +114,11 @@ html {
     border-radius: 20px;
 }
 .main__login a:hover, .main__login a:focus, .main__login a:active,
-.content__two a:hover, .content__two a:focus,.content__two a:active,
+.content__two a:hover, .content__two a:focus,.content__two a:active {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
 .playlist__content a:hover, .playlist__content a:focus,.playlist__content a:active {
 	text-decoration: none;
 	color: initial;
@@ -151,7 +156,7 @@ html {
     visibility: hidden;
 }
 .resultado__slider div img {
-    width: 245px;
+	width: 100%;
     height: auto;
     border-radius: 50%;
     border: 5px solid #f9e03a;
@@ -200,11 +205,33 @@ html {
     font-size: 2vw;
     padding: 6px;
 }
+.intensidades__content div {
+	width: 100%;
+}
+.intensidades__content div#first {
+	text-align: left;
+}
+.intensidades__content div#first label, .intensidades__content div#second label {
+	font-weight: 400;
+    color: #0f327c;
+    font-size: 1.2vw;
+}
+.intensidades__content div#second {
+	text-align: right;
+}
 .intensidades__content div img {
-	width: 100px;
+	width: 10vw;
     height: auto;
     border-radius: 50%;
     border: 5px solid #0f327c;
+}
+.intensidades__background {
+    background-image: url(images/intensidades.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%!important;
+    height: auto;
+    margin: 0 auto;
 }
 .intensidades__content p {
 	width: 40%;
@@ -238,8 +265,15 @@ html {
 	font-size: 1.2vw;
 	width: 34%;
 }
-.playlist__content p:nth-child(3) {
+.playlist__content p.spotify {
 	margin-top: 25px;
+	font-weight: 800;
+}
+.playlist__content p.spotify i {
+	padding-right: 10px;
+	font-size: 2vw;
+	position: relative;
+	top: 5px;
 }
 .estilo__content .div__modify {
 	border-color: transparent transparent #0f327c transparent;
@@ -294,4 +328,17 @@ button.slick-prev {
 }
 .slick-slide:focus {
 	outline: none;
+}
+.left_arrow {
+	font-size: 5vw;
+	color: #fff;
+	position: absolute;
+	top: 30%;
+}
+.right_arrow {
+	font-size: 5vw;
+	color: #fff;
+	position: absolute;
+	top: 30%;
+	right: -5%;
 }
