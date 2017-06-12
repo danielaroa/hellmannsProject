@@ -1,1 +1,297 @@
-style
+body, label {
+	font-family: 'Work Sans', sans-serif;
+}
+p {
+	line-height: 45px;
+}
+html {
+	overflow-x: hidden;
+}
+
+.main__header {
+	height: 90px;
+	width: 100%;
+	background-color: #f9e03a;
+	z-index: 9;
+}
+.main__header--logo img {
+    height: auto;
+    width: 90%;
+}
+.main__header--logo {
+	padding-left: 10%;
+    position: absolute;
+    top: 20px;
+    z-index: 9;
+}
+.main__header h2{
+	text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    font-weight: 400;
+}
+.main__header--spotify {
+    position: absolute;
+    right: 26px;
+    top: 30px;
+    font-size: 1.2vw;
+}
+.main__header--spotify i {
+	font-size: 2vw;
+}
+.main__image {
+	background-image: url('images/background.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	width: 100%;
+}
+.main__footer {
+	font-size: 1vw;
+    width: 100%;
+    z-index: 9;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+.main__footer ul li {
+    list-style: none;
+    padding: 11px;
+    padding: 0px 10px;
+    margin: 10px 0;
+}
+.main__footer ul {
+    display: inline-flex;
+    margin: 0 0 0 10%;
+    padding: 0;
+}
+.main__footer ul li:nth-child(1), .main__footer ul li:nth-child(2){
+	border-right: 1px solid;
+}
+.main__footer label {
+	float: right;
+    margin: 10px 5%;
+}
+.main__content {
+    position: absolute;
+    width: 36%;
+    height: 768px;
+    top: 90px;
+    background: -o-linear-gradient(right, rgb(255, 255, 255), rgba(250, 242, 98, 0.64));
+    background: -moz-linear-gradient(right, rgb(255, 255, 255), rgba(250, 242, 98, 0.64));
+    background: linear-gradient(to right, rgb(255, 255, 255) , rgba(250, 242, 98, 0.64));
+    box-shadow: 20px 0px 30px 13px rgba(250, 242, 98, 0.69);
+}
+.main__content h1 {
+	top: 20%;
+    position: relative;
+    font-size: 3.5vw;
+    text-align: center;
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.main__content p {
+	font-size: 2vw;
+    top: 35%;
+    position: relative;
+    text-align: center;
+}
+.main__login {
+	position: relative;
+    top: 40%;
+    text-align: center;
+}
+.main__login a, .content__two a, .playlist__content a {
+	font-size: 1vw;
+    color: #fff;
+    background: #112670;
+    padding: 15px;
+    border-radius: 20px;
+}
+.main__login a:hover, .main__login a:focus, .main__login a:active,
+.content__two a:hover, .content__two a:focus,.content__two a:active,
+.playlist__content a:hover, .playlist__content a:focus,.playlist__content a:active {
+	text-decoration: none;
+	color: initial;
+	cursor: pointer;
+}
+.content__two a {
+	position: relative;
+	top: 32px;
+	letter-spacing: 1.5px;
+}
+.playlist__content a {
+	color: #000;
+    background: #fff;
+}
+.main__login a i {
+	font-size: 1.5vw;
+    padding-right: 10px;
+    top: 2px;
+    position: relative;
+}
+.resultado__slider {
+	width: 65%;
+	margin: 30px auto;
+}
+.resultado__slider div {
+	height: auto;
+	margin: 0 25px;
+	text-align: center;
+	color: #fff;
+}
+.resultado__slider div label {
+	font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    visibility: hidden;
+}
+.resultado__slider div img {
+    width: 245px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #f9e03a;
+}
+.div__modify {
+	width: 50%;
+    border-style: solid;
+    border-width: 0 0 15vw 100vw;
+    position: relative;
+    bottom: -1px;
+}
+.resultado__content .div__modify {
+	border-color: transparent transparent #ffffff transparent;
+}
+.resultado__content {
+	background-color: #112670;
+    padding-top: 3%;
+}
+.resultado__content p.resultado__escuchados {
+	margin: 0 auto;
+    width: 30%;
+}
+.resultado__content p {
+	text-align: center;
+    font-size: 2.5vw;
+    color: #fff;
+    margin: 0;
+}
+.resultado__content p:nth-child(2) {
+	font-weight: 800;
+	color: #f9e03a;
+	font-size: 3vw;
+}
+.resultado__generos {
+    width: 160px;
+    height: 56px;
+    text-align: center;
+    background: #33ccff;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+    margin: 15px auto;
+    color: #fff;
+    font-size: 2vw;
+    padding: 6px;
+}
+.intensidades__content div img {
+	width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #0f327c;
+}
+.intensidades__content p {
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	color: #0f327c;
+	font-size: 2.5vw;
+	font-weight: 800;
+}
+.intensidades__content .div__modify {
+	border-color: transparent transparent #f6d603 transparent;
+}
+.playlist__content {
+	background-color: #0f327c;
+	text-align: center;
+	margin-bottom: 40px;
+	padding-bottom: 5%;
+}
+.playlist__content p {
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+}
+.playlist__content p:nth-child(1) {
+	font-size: 2vw;
+	line-height: 35px;
+	font-weight: 800;
+	width: 40%;
+}
+.playlist__content p:nth-child(2) {
+	font-size: 1.2vw;
+	width: 34%;
+}
+.playlist__content p:nth-child(3) {
+	margin-top: 25px;
+}
+.estilo__content .div__modify {
+	border-color: transparent transparent #0f327c transparent;
+}
+.estilo__content {
+	background-color: #f6d603;
+}
+.estilo__content > p:nth-child(1) {
+	text-align: center;
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 800;
+    width: 30%;
+    margin: 0 auto;
+}
+.estilo__content p strong {
+	font-size: 2.3vw;
+	line-height: 70px;
+}
+.estilo__content div {
+	display: inline-flex;
+}
+.estilo__content .content__two {
+	display: inline-flex;
+}
+.estilo__content .content__two div {
+	width: 50%;
+    margin-top: 15px;
+}
+.estilo__content .content__two p {
+	width: 25%;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.6vw;
+}
+.estilo__content .content__two div img{
+	width: auto;
+    height: 50%;
+    left: 50%;
+    position: relative;
+}
+button.slick-next {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+}
+button.slick-prev {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+}
+.slick-slide:focus {
+	outline: none;
+}
